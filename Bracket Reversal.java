@@ -35,7 +35,11 @@ public class Bracketbalance
                 		 stack.push((Character) ch[i]);      //pushing elment                        
                 		}
                		 }
-        		System.out.println(count);	//print final count
+        			 if(stack.size()==0) {		//print only if stack is empty
+        				System.out.println(count);	//print final count
+               				 }
+               			 else
+               		   		 System.out.println(count+(stack.size()/2));	//stack remain elemnts will make balance 
 	   	 }
 		else
 			System.out.println("Can't be made bracket balance");
